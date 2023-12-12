@@ -21,3 +21,12 @@ calc = (numberOne: number, numberTwo: number, action: "add")=>{
 
 const result = calc(10, 2, "minus");
 console.log(result)
+
+// example #03
+let logDetail: (obj: {username: string, password: string|number})=>void;
+logDetail = (salik: {username: string, password: string|number})=>{
+    console.log(`${salik.username} recently loggedIn at `+new Date()+`with password ${salik.password}`);
+}
+
+const logResult = logDetail( {username: "salik-dev@gmail.com", password: "salik-dev.eng1212"})
+
