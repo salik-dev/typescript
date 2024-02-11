@@ -67,11 +67,6 @@ let greet;
 greet = () => {
     console.log('function basic type');
 };
-let sum = 0;
-const calc = (a, b, c = 20) => {
-    console.log(a, b, c);
-};
-const requireResult = calc(20, 30, "sume: ");
 const logDetails = (uid, username) => {
     return `${username} is loggedIn of ID: ${uid}`;
 };
@@ -79,4 +74,20 @@ const welcome = (uid) => {
     return `${uid.name} welcome in application`;
 };
 const result = welcome({ name: "salik-dev", uid: "20209393-kd" });
-console.log(result);
+// Function signature
+// example 01
+let msge;
+msge = (username, msge) => {
+    console.log(`${username} says ${msge}`);
+};
+// example 02
+let calc;
+calc = (n1, n2, action) => {
+    return action === 'add' ? n1 + n2 : n1 - n2;
+};
+let auth;
+auth = (salik) => {
+    console.log(`${salik.name} is loggedIn with age: ${salik.age}`);
+};
+const output = auth({ name: "dev", age: 20 });
+console.log(output);

@@ -99,12 +99,12 @@ greet = () => {
     console.log('function basic type')
 }
 
-let sum=0;
-const calc = (a: number, b: number, c: string|number=20): void=>{
-   console.log(a, b, c)
-}
+// let sum=0;
+// const calc = (a: number, b: number, c: string|number=20): void=>{
+//    console.log(a, b, c)
+// }
 
-const requireResult = calc(20, 30, "sume: ")
+// const requireResult = calc(20, 30, "sume: ")
 
 // Typescript Aliases
 type strOrNum =  number | string;
@@ -118,4 +118,28 @@ const welcome = (uid: objWithName) : string => {
 }
 const result = welcome({name: "salik-dev", uid: "20209393-kd"})
 
-console.log(result)
+
+// Function signature
+
+// example 01
+let msge: (x: string, y: number | string) => void;
+msge = (username : string, msge: number | string) => {
+    console.log(`${username} says ${msge}`);
+}
+
+// example 02
+let calc: (a: number, b: number, c: string) => number;
+calc = (n1: number, n2: number, action: string)=>{
+    return action ==='add' ?  n1 + n2 : n1 - n2;
+}
+
+// example 03
+type person= {name: string, age: number};
+let auth: (obj: person)=> void;
+
+auth = (salik: person)=> {
+    console.log(`${salik.name} is loggedIn with age: ${salik.age}`);
+}
+
+const output = auth({name: "dev", age: 20});
+console.log(output)
