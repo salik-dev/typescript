@@ -72,4 +72,11 @@ const calc = (a, b, c = 20) => {
     console.log(a, b, c);
 };
 const requireResult = calc(20, 30, "sume: ");
-console.log('requireResult', requireResult);
+const logDetails = (uid, username) => {
+    return `${username} is loggedIn of ID: ${uid}`;
+};
+const welcome = (uid) => {
+    return `${uid.name} welcome in application`;
+};
+const result = welcome({ name: "salik-dev", uid: "20209393-kd" });
+console.log(result);

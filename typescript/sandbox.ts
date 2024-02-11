@@ -106,5 +106,16 @@ const calc = (a: number, b: number, c: string|number=20): void=>{
 
 const requireResult = calc(20, 30, "sume: ")
 
+// Typescript Aliases
+type strOrNum =  number | string;
+type objWithName = {name: string, uid: strOrNum}
 
-console.log('requireResult', requireResult)
+const logDetails = (uid: strOrNum, username: string): string => {
+    return `${username} is loggedIn of ID: ${uid}`
+}
+const welcome = (uid: objWithName) : string => { 
+    return `${uid.name} welcome in application`
+}
+const result = welcome({name: "salik-dev", uid: "20209393-kd"})
+
+console.log(result)
