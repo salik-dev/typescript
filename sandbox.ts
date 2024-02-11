@@ -5,8 +5,6 @@ const isLoggedIn = false;
 isLoggedIn = "" // ts not permitted
 username = 20 // ts not permitted
 
-console.log(username)
-
 // ary types
 
 const elements = [10, 20, 30];
@@ -16,7 +14,6 @@ elements = [20, false, 'bahadur '] // ts not permitted
 mixed.push(true)
 mixed[3] = 200/3939
 
-console.log(mixed)
 
 // objects types
 
@@ -35,5 +32,29 @@ userData ={ // TS not permitted
     skills: ['react.js', 'next.js', 'node.js', 'express.js']
 }
 
-console.log(userData)
+// Explicit Types
+
+let personName: string;
+
+personName = "bahadur ali";
+personName = false;
+
+// array explicit type
+let data: (string|boolean|number)[] = []
+data.push(20);
+data.push('user details')
+data.push(false>=true)
+
+// object explicit type
+
+let profile:object;
+
+profile = {
+    firstName:'Bahadur',
+    lastName: 'Ali',
+    age: '23',
+    jobStatus: false
+}
+
+console.log(profile)
 
