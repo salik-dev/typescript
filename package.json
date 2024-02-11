@@ -1,7 +1,7 @@
 {
   "name": "typescript app",
   "scripts": {
-    "pushsalik": "git add . && git commit -m 'salik-commit' && git push"
+    "karopush": "git add . && git commit -m 'salik-commit' && git push"
   },
   "dependencies": {
     "tsc": "^2.0.4",
