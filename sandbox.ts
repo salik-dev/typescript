@@ -23,9 +23,16 @@ console.log(mixed)
 const userData = {
     name: "bahadur ali",
     age: 23,
-    jobStatus: false
+    jobStatus: false,
+    skills: ['react.js', 'next.js', 'node.js', 'express.js']
 }
 
 userData.name = "irfan ali";
+userData ={ // TS not permitted
+    name: "bahadur ali",
+    age: 23,
+    jobStatus: false,
+    skills: ['react.js', 'next.js', 'node.js', 'express.js']
+}
 
-console.
+console.log(userData)

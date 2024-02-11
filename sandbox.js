@@ -15,7 +15,14 @@ console.log(mixed);
 var userData = {
     name: "bahadur ali",
     age: 23,
-    jobStatus: false
+    jobStatus: false,
+    skills: ['react.js', 'next.js', 'node.js', 'express.js']
 };
 userData.name = "irfan ali";
-console.;
+userData = {
+    name: "bahadur ali",
+    age: 23,
+    jobStatus: false,
+    skills: ['react.js', 'next.js', 'node.js', 'express.js']
+};
+console.log(userData);
