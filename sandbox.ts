@@ -37,7 +37,7 @@ userData ={ // TS not permitted
 let personName: string;
 
 personName = "bahadur ali";
-personName = false;
+personName = false; // TS not permitted
 
 // array explicit type
 let data: (string|boolean|number)[] = []
@@ -56,5 +56,15 @@ profile = {
     jobStatus: false
 }
 
-console.log(profile)
+let courseDetails: {
+    name: string,
+    version: number,
+    available: boolean
+}
+courseDetails = {
+    name: "bahadur ali",
+    version: 1.2,
+    available: true
+}
 
+console.log('courseDetails', courseDetails)

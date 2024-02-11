@@ -26,7 +26,7 @@ userData = {
 // Explicit Types
 var personName;
 personName = "bahadur ali";
-personName = false;
+personName = false; // TS not permitted
 // array explicit type
 var data = [];
 data.push(20);
@@ -40,4 +40,10 @@ profile = {
     age: '23',
     jobStatus: false
 };
-console.log(profile);
+var courseDetails;
+courseDetails = {
+    name: "bahadur ali",
+    version: 1.2,
+    available: true
+};
+console.log('courseDetails', courseDetails);
