@@ -67,8 +67,9 @@ let greet;
 greet = () => {
     console.log('function basic type');
 };
+let sum = 0;
 const calc = (a, b, c = 20) => {
-    return a + b + c;
+    console.log(a, b, c);
 };
 const requireResult = calc(20, 30, "sume: ");
 console.log('requireResult', requireResult);

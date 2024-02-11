@@ -99,8 +99,9 @@ greet = () => {
     console.log('function basic type')
 }
 
-const calc = (a: number, b: number, c?: string|number=20)=>{
-    return a + b + c;
+let sum=0;
+const calc = (a: number, b: number, c: string|number=20): void=>{
+   console.log(a, b, c)
 }
 
 const requireResult = calc(20, 30, "sume: ")
