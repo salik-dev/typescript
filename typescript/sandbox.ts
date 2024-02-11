@@ -105,4 +105,6 @@ const calc = (a: number, b: number, c: string|number=20): void=>{
 }
 
 const requireResult = calc(20, 30, "sume: ")
+
+
 console.log('requireResult', requireResult)
