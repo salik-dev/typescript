@@ -1,16 +1,17 @@
+"use strict";
 // basic types (01)
-var username = "bahadur ali";
-var isLoggedIn = false;
+const username = "bahadur ali";
+const isLoggedIn = false;
 isLoggedIn = ""; // ts not permitted
 username = 20; // ts not permitted
 // ary types
-var elements = [10, 20, 30];
-var mixed = [20, false, 'bahadur ali'];
+const elements = [10, 20, 30];
+const mixed = [20, false, 'bahadur ali'];
 elements = [20, false, 'bahadur ']; // ts not permitted
 mixed.push(true);
 mixed[3] = 200 / 3939;
 // objects types
-var userData = {
+const userData = {
     name: "bahadur ali",
     age: 23,
     jobStatus: false,
@@ -24,26 +25,41 @@ userData = {
     skills: ['react.js', 'next.js', 'node.js', 'express.js']
 };
 // Explicit Types
-var personName;
+let personName;
 personName = "bahadur ali";
 personName = false; // TS not permitted
 // array explicit type
-var data = [];
+let data = [];
 data.push(20);
 data.push('user details');
 data.push(false >= true);
 // object explicit type
-var profile;
+let profile;
 profile = {
     firstName: 'Bahadur',
     lastName: 'Ali',
     age: '23',
     jobStatus: false
 };
-var courseDetails;
+let courseDetails;
 courseDetails = {
     name: "bahadur ali",
     version: 1.2,
     available: true
 };
-console.log('courseDetails', courseDetails);
+// Dynamic Types
+let age = 23;
+age = false;
+age = 'twenty three';
+let lists = [];
+lists.push(20);
+lists.push('bahadur ali');
+lists.push(false);
+let fetchData;
+fetchData = {
+    id: 1,
+    data: [
+        { country: "pakistan", code: '20kd' }
+    ]
+};
+console.log(fetchData);

@@ -67,4 +67,27 @@ courseDetails = {
     available: true
 }
 
-console.log('courseDetails', courseDetails)
+// Dynamic Types
+
+let age: any = 23;
+age = false
+age = 'twenty three'
+
+let lists: any[] = []
+
+lists.push(20)
+lists.push('bahadur ali')
+lists.push(false)
+
+let fetchData: {
+    id: any,
+    data: any,
+}
+
+fetchData = {
+    id: 1,
+    data: [
+        {country: "pakistan", code: '20kd'}
+    ]
+}
+console.log(fetchData)
