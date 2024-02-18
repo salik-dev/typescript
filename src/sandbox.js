@@ -91,3 +91,22 @@ auth = (salik) => {
 };
 const output = auth({ name: "dev", age: 20 });
 console.log(output);
+// crash new course
+const n1 = 0;
+const n2 = 0;
+const sum = 'result: ';
+const nl = null; // absense of value
+let und; // default value of uninitialized variable
+// falsy values
+if (n1) {
+    console.log(' value specified');
+}
+else {
+    console.log("no value specified");
+}
+if (0) {
+    console.log('false');
+}
+else {
+    console.log('true');
+}

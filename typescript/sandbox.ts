@@ -120,7 +120,6 @@ const result = welcome({name: "salik-dev", uid: "20209393-kd"})
 
 
 // Function signature
-
 // example 01
 let msge: (x: string, y: number | string) => void;
 msge = (username : string, msge: number | string) => {
@@ -143,3 +142,26 @@ auth = (salik: person)=> {
 
 const output = auth({name: "dev", age: 20});
 console.log(output)
+
+// crash new course
+
+const n1: number = 0;
+const n2: number = 0;
+const sum: string = 'result: ';
+
+const nl: null = null; // absense of value
+let und; // default value of uninitialized variable
+// falsy values
+if(n1){
+    console.log(' value specified');
+}
+else{
+    console.log("no value specified")
+}
+if(0){
+    console.log('false')
+}
+else{
+    console.log('true')
+}
+
